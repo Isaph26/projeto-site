@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+    :root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-color: #101828;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Menu */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .links a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin-right: 2rem;
+    }
+
+    button {
+        display: inline-block;
+        padding: 0.8rem 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.5rem;
+        background: none;
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+    
+    button#cadastro {
+        background-color: var(--main-color);
+        color: white;   
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .sideMenu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu.active {
+        right: 0;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s;
+    }
+
+    .menu .links a {
+        margin-bottom: 2rem;
+    }
+      
+    .sideMenu img {
+        position: relative;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    /* Cabeçalho - Primeira seção */
+
+    .sobrenos {
+        padding: 6rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sobrenos span {
+        color: var(--main-color);
+    }
+
+    .sobrenos h1 {
+        font-size: 2rem;
+        color: var(--title-color);
+        text-align: center;
+    }
+
+    .sobrenos p {
+        color: var(--text-color);
+        max-width: 60%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    /* Seção de métricas*/
+
+    .metricas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 3rem;
+        padding: 0 8rem;
+    }
+
+    .metrica {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .metrica h1 {
+        color: var(--main-color);
+        font-size: 3rem;
+    }
+    
+    .metrica span {
+        color: var(--text-color);
+        line-height: 140%;
+        font-size: 90%;
+    }
+
+    .metrica .metric-title {
+        color: var(--title-color);
+        font-weight: bold;
+
+    }
+
+    /* Seção de vagas */
+
+    .vagas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+        padding-top: 8rem;
+        gap: 1rem;
+    }
+
+    .vagas span {
+        color: var(--main-color);
+        background: rgba(142, 36, 36, 0.05);
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .vagas h2 {
+        color: var(--title-color);
+        text-align: center;
+    }
+
+    .vagas p {
+        color: #667085;
+        text-align: center;
+    }
+
+    .vagas img {
+        margin: 2rem;
+        width: 80%;
+    }
+
+    /* Seção Vagas abertas */
+
+    .vagas-abertas {
+        padding-top: 4rem;
+    }
+
+    .vagas-abertas span.area {
+        display: block;
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: var(--title-color);
+    }
+
+    .vaga {
+        border: 1px solid #EAECF0;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        max-width: 50%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        color: var(--title-color);
+    }
+
+    .vaga span.titulo-vaga {
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .vaga .info-vagas {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        font-size: 90%;
+        color: var(--text-color);
+    }  
+
+    /* Seção de depoimentos */
+
+    .depoimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8rem auto;
+        gap: 2rem;
+        max-width: 80%;
+        background-color: rgba(195, 25, 25, 0.05);
+        padding: 3rem 2rem;
+    }
+
+    .depoimento span{
+        color: var(--main-color);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .depoimento h2 {
+        color: #101828;
+        font-weight: bold;
+        text-align: center;
+        max-width: 70%;
+        margin: 1.5rem 0;
+    }
+
+    .depoimento img {
+        width: 60px;
+    }
+
+    .depoimento span.nome {
+        color: var(--title-color);
+        margin: -30px;
+    }
+
+    .depoimento span.cargo {
+        color: var(--text-color);
+        font-weight: normal;
+    }
+
+    /* Rodapé */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem 1rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    footer > h2 {
+        color: var(--title-color);
+    }
+
+    footer > span {
+        color: var(--text-color);
+    }
+
+    footer form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer input {
+        outline: none;
+        border: 1px solid #D0D5DD;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        width: 12rem;
+        margin-right: 1rem;
+    }
+
+    footer > p {
+        color: #aaaeb6;
+    }
+
+    /* Responsividade */
+
+    @media screen and (max-width: 850px) {
+        .metricas {
+            padding: 0 4rem;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .metricas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .metrica {
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .metrica span {
+            text-align: center;
+            max-width: 280px;
+        }
+
+        .sobrenos p {
+            max-width: 80%;
+        }
+
+        .vaga {
+        max-width: 70%; 
+        }
+
+        .vagas span.area {
+            max-width: 70%;
+        }
+
+        .depoimento {
+            align-items: center;
+        }
+
+        .depoimento h2 {
+            max-width: 100%;
+            font-size: 120%;
+        }
+
+        .depoimento .cargo {
+            margin-bottom: -5rem;
+        }
+
+        /* Ajustes do menu */
+
+        .sideMenu {
+            display: initial;
+            visibility: visible;
+        }
+
+        .links {
+            margin: 2rem 0;
+        }
+
+        .link a {
+            margin-right: 0;
+        }
+
+        .menu {
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -1000px;
+            height: 100vh;
+            background: #f9fafb;
+            width: 15rem;
+            padding: 2rem;
+            transition: all 2s;
+        }
+
+        .menu .links, .menu .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+        
+    
