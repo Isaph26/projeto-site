@@ -288,7 +288,7 @@
 
     /* Responsividade */
 
-    @media screen and (min-width: 600px) and(max-width: 1276px) {
+    @media screen and (min-width: 600px) {
         .metricas {
             padding: 0 4rem;
         }
