@@ -288,13 +288,13 @@
 
     /* Responsividade */
 
-    @media screen and (min-width: 1270px) and (max-width: 1310px) {
+    @media screen and  (min-width: 600px) {
         .metricas {
             padding: 0 4rem;
         }
     }
 
-    @media screen and (max-width: 1310px) {
+    @media screen and (max-width: 601px) and (max-width: 1024px) {
         .metricas {
             display: flex;
             flex-direction: column;
@@ -371,5 +371,10 @@
         }
     }
 
+    @media screen and (min-width: 1025px) {
+        .metricas {
+            padding: 0 4rem;
+        } 
+    }
         
     
