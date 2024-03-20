@@ -294,7 +294,7 @@
         }
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1270px) {
         .metricas {
             display: flex;
             flex-direction: column;
