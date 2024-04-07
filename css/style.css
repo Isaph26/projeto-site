@@ -106,10 +106,7 @@
     /* Seção de métricas*/
 
     .metricas{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 3rem;
-        padding: 0 8rem;
+        padding: 0 1rem;
     }
 
     .metrica {
@@ -138,12 +135,7 @@
     /* Seção de vagas */
 
     .vagas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         padding: 0 1rem;
-        padding-top: 8rem;
-        gap: 1rem;
     }
 
     .vagas span {
