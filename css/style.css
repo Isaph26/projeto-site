@@ -288,20 +288,11 @@
 
     /* Responsividade */
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 555px) {
         .metricas {
-            padding: 0 1rem;
+            padding: 0 4rem;
         }
-
-        .vagas {
-            padding: 0 1rem;
-        }
-
-        .sideMenu{
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
+    }    
 
     @media screen and (max-width: 1277px) and (max-width: 1600px) {
         .metricas {
