@@ -230,16 +230,16 @@
         font-weight: bold;
         text-align: center;
         max-width: 70%;
-        margin: 1.5rem 0;
+        margin: 2rem 0;
     }
 
     .depoimento img {
-        width: 60px;
+        width: 48px;
     }
 
     .depoimento span.nome {
         color: var(--title-color);
-        margin: -30px;
+        margin: 0.5rem 0;
     }
 
     .depoimento span.cargo {
@@ -254,6 +254,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: #F9FAFB;
         padding: 6rem 1rem;
         gap: 1.5rem;
         text-align: center;
