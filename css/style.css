@@ -294,7 +294,7 @@
         }
     }    
 
-    @media screen and (max-width: 1277px) and (max-width: 1600px) {
+    @media screen and (max-width: 850px) {
         .metricas {
             display: flex;
             flex-direction: column;
@@ -369,12 +369,6 @@
             flex-direction: column;
             width: 100%;
         }
-    }
-
-    @media screen and (min-width: 1600px) {
-        .metricas {
-            padding: 0 4rem;
-        } 
     }
         
     
